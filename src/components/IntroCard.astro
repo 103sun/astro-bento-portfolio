@@ -8,8 +8,8 @@ import { Image } from "astro:assets";
 ---
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-4">
-  <div class="flex w-full h-full">
-    <div class="flex flex-col justify-between md:max-h-[300px] gap-8">
+  <div class="flex w-full h-full gap-8">
+    <div class="flex flex-col justify-between md:max-h-[300px]">
       <div class="flex flex-col h-full">
         <h6 class="text-sm font-light m-0 text-gray-500">welcome</h6>
         <p class="m-0 font-light text-xl">
@@ -28,7 +28,7 @@ import { Image } from "astro:assets";
     <img
     src="/robert202501.jpg"
     alt="Robert Liu"
-    class="w-48 h-48 rounded-2xl object-cover md:relative ml-auto"
+    class="w-48 h-48 rounded-2xl object-cover md:relative ml-auto shrink-0"
     />
   </div>
 </Card>
