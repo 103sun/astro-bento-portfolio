@@ -3,16 +3,17 @@ import Card from "./Card/index.astro";
 ---
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About me">
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-5">
+    
     <div class="text-sm font-light">
       <p>
-        Hi, I'm Robert, a history major at Stanford. While I was born in Chicago
-        and have lived in many parts of the US, I consider myself a North
-        Carolinian.
-        <br />
-        My current interests include:
+        I was born in Chicago, but grew up in Durham, North Carolina.
       </p>
-      <ul class="list-disc list-inside">
+    </div>
+
+    <div class="text-sm font-light">
+      <p class="mb-2 font-medium">My current interests include:</p>
+      <ul class="list-disc list-inside space-y-1">
         <li>History</li>
         <li>Public Policy</li>
         <li>International Relations</li>
@@ -21,9 +22,12 @@ import Card from "./Card/index.astro";
         <li>Law</li>
       </ul>
     </div>
-    <p class="text-sm font-light">
-      Beyond academics, I'm passionate about traveling, tennis, fishing, and arts.
-    </p>
+
+    <div class="text-sm font-light">
+      <p>
+        Beyond academics, I'm passionate about traveling, tennis, fishing, and arts.
+      </p>
+    </div>
     
   </div>
 </Card>
