@@ -1,37 +1,55 @@
 ---
-import { getCurrentTimeInItaly, formatTimeForItaly } from "../lib/helpers";
 import Card from "./Card/index.astro";
 ---
 
+<Card colSpan="lg:col-span-2" rowSpan="md:row-span-1" title="My Locations">
+  <div class="flex flex-col justify-center h-full gap-4">
+    <div>
+      <p class="text-sm font-medium text-gray-400">Stanford, CA</p>
+      <p id="stanford-time" class="text-2xl font-serif text-white italic"></p>
+    </div>
+    
+    <div class="h-[1px] w-full bg-gray-800"></div>
+
+    <div>
+      <p class="text-sm font-medium text-gray-400">Durham, NC</p>
+      <p id="durham-time" class="text-2xl font-serif text-white italic"></p>
+    </div>
+  </div>
+</Card>
+
 <script>
-  import { onCleanup, onMount } from "solid-js";
-  import { formatTimeForItaly } from "../lib/helpers";
-
-  let interval: ReturnType<typeof setInterval>;
-
-  function updateClock() {
-    const timeDisplay = document.getElementById("timeDisplay");
+  function updateTime() {
     const now = new Date();
 
-    if (timeDisplay) {
-      timeDisplay.textContent = formatTimeForItaly(now);
-      timeDisplay.setAttribute("datetime", now.toISOString());
-    }
+    const stanfordOptions = {
+      timeZone: "America/Los_Angeles",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    } as const;
+
+    const durhamOptions = {
+      timeZone: "America/New_York",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    } as const;
+
+    const stanfordTime = new Intl.DateTimeFormat("en-US", stanfordOptions).format(now);
+    const durhamTime = new Intl.DateTimeFormat("en-US", durhamOptions).format(now);
+
+    const stanfordEl = document.getElementById("stanford-time");
+    const durhamEl = document.getElementById("durham-time");
+
+    if (stanfordEl) stanfordEl.textContent = stanfordTime;
+    if (durhamEl) durhamEl.textContent = durhamTime;
   }
 
-  onMount(() => {
-    interval = setInterval(updateClock, 1000);
-  });
-
-  onCleanup(() => {
-    clearInterval(interval);
-  });
+  // Update every second
+  setInterval(updateTime, 1000);
+  // Run once immediately
+  updateTime();
 </script>
-
-<Card colSpan="lg:col-span-2" rowSpan="md:row-span-2" title="Time zone">
-  <time
-    class="text-2xl xl:text-5xl xl:whitespace-nowrap w-50 xl:w-100 h-[calc(100%-28px)] font-serif flex justify-center items-center"     datetime=""     id="timeDisplay"
-  >
-    {formatTimeForItaly(getCurrentTimeInItaly())}
-  </time>
-</Card>
