@@ -3,15 +3,19 @@ import Card from "./Card/index.astro";
 import { LINKS } from "../lib/constants";
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
-  <div class="h-full">
-    <header class="flex items-center">
-      <h1 class="text-white text-xl font-bold">
-        Contact me!
-      </h1>
-    </header>
-    <address class="flex flex-col mt-4">
-      <h2 class="text-gray-500">Email</h2>
-      <p>robkliu(at)stanford(dot)edu</p>
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="Contact Me">
+  <div class="flex flex-col h-full justify-between">
+    <div class="flex flex-col mt-4">
+      <h2 class="text-gray-500 text-sm">Email</h2>
+      <p>robkliu(at)stanford(dot)edu</p> </div>
+
+    <div class="flex gap-4 mt-4">
+      <a href={LINKS.linkedin} target="_blank" class="hover:text-blue-400 transition-colors">
+        LinkedIn
+      </a>
+      <a href={LINKS.instagram} target="_blank" class="hover:text-pink-400 transition-colors">
+        Instagram
+      </a>
+    </div>
   </div>
 </Card>
