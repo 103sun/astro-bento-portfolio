@@ -10,13 +10,16 @@ import { LINKS } from "../lib/constants";
       <h2 class="text-gray-500 text-sm">Email</h2>
       <p>robkliu(at)stanford(dot)edu</p> </div>
 
-    <div class="flex gap-4 mt-4">
-      <a href={LINKS.linkedin} target="_blank" class="hover:text-blue-400 transition-colors">
-        LinkedIn
+    <div class="flex flex-col flex-grow justify-around mt-4">
+      <a href={LINKS.linkedin} target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+        <Icon name="ri:linkedin-box-fill" class="h-6" />
+        <span>LinkedIn</span>
       </a>
-      <a href={LINKS.instagram} target="_blank" class="hover:text-pink-400 transition-colors">
-        Instagram
+      <a href={LINKS.instagram} target="_blank" class="flex items-center gap-2 hover:text-pink-400 transition-colors">
+        <Icon name="ri:instagram-line" class="h-6" />
+        <span>Instagram</span>
       </a>
     </div>
   </div>
 </Card>
+
