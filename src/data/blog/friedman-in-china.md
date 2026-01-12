@@ -1,7 +1,7 @@
 ---
 title: "Milton Friedman in China: A History of Economic Transition"
-pubDate: 2026-01-11
 description: "An analysis of Milton Friedman's 1980 and 1988 visits to China and their impact on the country's economic liberalization."
+pubDate: 2026-01-11
 tags: ["History", "Economics", "Research"]
 ---
 
@@ -17,3 +17,9 @@ My current research focuses on the pivotal moments when Western economic thought
 
 ### Project Status
 This project is currently under development. I am currently reviewing several key documents related to the 1988 visit at the **Hoover Institute**.
+
+![Milton and Rose Friedman](/MiltonRose.jpg)
+*Caption: Milton and Rose Friedman during their visit to TianAnMen Square in Beijing.*
+
+![Milton Friedman and Zhao Ziyang](/MiltonZhao.jpg)
+*Caption: Milton Friedman meeting with General Secretary Zhao Ziyang in 1988.*
