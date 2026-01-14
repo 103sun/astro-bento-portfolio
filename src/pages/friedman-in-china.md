@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Layout.astro"
+layout: "../layouts/Layout.astro"
 title: "Milton Friedman in China: A History of Economic Transition"
 description: "An analysis of Milton Friedman's 1980 and 1988 visits to China and their impact on the country's economic liberalization."
 ---
