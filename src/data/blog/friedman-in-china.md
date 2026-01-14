@@ -19,7 +19,7 @@ My current research focuses on the pivotal moments when Western economic thought
 This project is currently under development. I am currently reviewing several key documents related to the 1988 visit at the **Hoover Institute**.
 
 ![Milton and Rose Friedman](/milton-rose.jpg)
-*Caption: Milton and Rose Friedman during their visit to TianAnMen Square in Beijing.*
+*Milton and Rose Friedman during their visit to TianAnMen Square in Beijing.*
 
 ![Milton Friedman and Zhao Ziyang](/milton-zhao.jpg)
-*Caption: Milton Friedman meeting with General Secretary Zhao Ziyang in 1988.*
+*Milton Friedman meeting with General Secretary Zhao Ziyang in 1988.*
