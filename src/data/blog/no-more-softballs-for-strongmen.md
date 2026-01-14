@@ -8,7 +8,7 @@ draft: false
 
 Originally published in [the Stanford Daily](https://stanforddaily.com/2025/10/16/liu-no-more-softballs-for-strongmen)
 
-# [Download pdf]()
+# [Download pdf](/liu_no_more_softballs_for_strongmen.pdf)
 
 Opinion by Robert Liu
 
